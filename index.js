@@ -29,7 +29,7 @@ async function analyze() {
 
     const latLonArray = decodedValue.split('|');
 
-    console.log("\n\nIDX\tLAT\tLON\tIS VALID?");
+    console.log("\n\nIDX\tLATITUDE\tLONGITUDE\tIS VALID?");
     latLonArray.forEach((coords, idx) => {
         const [lat, lon] = coords.split(',');
         console.log(`#${idx}\t${lat}\t${lon}\t${check_lat_lon(lat, lon)}`);
